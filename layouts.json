@@ -1,0 +1,49 @@
+{
+  "canvas": {
+    "width": 1242,
+    "height": 1660
+  },
+  "defaults": {
+    "margin": 40,
+    "gap": 20,
+    "background": "#f3dfc6"
+  },
+  "layouts": {
+    "layout1": {
+      "name": "左侧9缩略图 + 右侧3大图",
+      "description": "适合12页PPT，左侧展示全部缩略图，右侧重点展示后3页",
+      "type": "left_right",
+      "left": {
+        "count": 9,
+        "width_max": 280
+      },
+      "right": {
+        "count": 3
+      }
+    },
+    "layout2": {
+      "name": "三层瀑布流",
+      "description": "第一层1张大图 + 第二层2张横排 + 第三层2张横排，适合5页PPT",
+      "type": "three_tier",
+      "margin": 0,
+      "gap": 0,
+      "layer_gap": 80,
+      "rows": [
+        { "count": 1 },
+        { "count": 2 },
+        { "count": 2 }
+      ]
+    },
+    "layout3": {
+      "name": "上下双图 + 标题",
+      "description": "上方1张大图 + 中间标题 + 下方1张大图，适合2页PPT",
+      "type": "top_bottom_with_title",
+      "title_height": 120,
+      "layer_gap": 40,
+      "rows": [
+        { "count": 1 },
+        { "count": 1 }
+      ]
+    }
+  }
+}
