@@ -33,6 +33,7 @@ def load_config():
 BG_PRESETS = {
     'default': '#f3dfc6',    # 米黄色（默认）
     'pink': '#ffcbdf',       # 粉色
+    'yellow': '#fffec5',     # 淡黄色
 }
 
 def parse_color(color_str):
