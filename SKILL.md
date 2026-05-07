@@ -10,10 +10,6 @@
 |--------|------|------|
 | `default` | #f3dfc6 | 米黄色（默认） |
 | `pink` | #ffcbdf | 粉色 |
-| `mint` | #e8f5f0 | 薄荷绿 |
-| `lavender` | #f0e6ff | 薰衣草紫 |
-| `peach` | #ffe5d9 | 蜜桃色 |
-| `white` | #ffffff | 纯白 |
 
 也可以直接指定 HEX 色值，如 `-b "#ffcbdf"`
 
