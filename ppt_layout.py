@@ -29,11 +29,24 @@ def load_config():
     return None
 
 
+# 可用背景色预设
+BG_PRESETS = {
+    'default': '#f3dfc6',    # 米黄色（默认）
+    'pink': '#ffcbdf',       # 粉色
+    'mint': '#e8f5f0',      # 薄荷绿
+    'lavender': '#f0e6ff',   # 薰衣草紫
+    'peach': '#ffe5d9',      # 蜜桃色
+    'white': '#ffffff',      # 纯白
+}
+
 def parse_color(color_str):
+    color_str = color_str.lower().strip()
+    # 先检查预设颜色
+    if color_str in BG_PRESETS:
+        color_str = BG_PRESETS[color_str]
     color_map = {'white': '#FFFFFF', 'black': '#000000', 'red': '#FF0000',
                  'green': '#00FF00', 'blue': '#0000FF', 'yellow': '#FFFF00',
                  'gray': '#808080', 'grey': '#808080'}
-    color_str = color_str.lower().strip()
     if color_str in color_map:
         color_str = color_map[color_str]
     if color_str.startswith('#'):
